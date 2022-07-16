@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fullscreen Responsive Login Page</title>
+    <!-- Bootstrab files -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- Main Javascript file -->
+    <script src="javascript/login.js"></script>
+    <!-- Main Css file -->
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+    <section>
+        <div class="imgBx">
+            <img src="images/bg6.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="" method="get" name="regform" onsubmit="return validation()">
+                    <div class="inputBx">
+                        <label class="control-lable" id="label1"  for="">Email</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+
+                    <div class="inputBx">
+                        <label for="" id="label2">Password</label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+
+                    <div class="remeber">
+                        <label for=""><input type="checkbox">Remember me</label>
+                    </div>
+
+                    <div class="inputBx">
+                        <input type="submit" id="submit" value="Sign in">
+                    </div>
+                    <div class="inputBx">
+                        <p>Don not have an account? <a href="registeration.html">Sign up</a></p>
+                    </div>
+                    <h3>Login with social media</h3>
+                    <ul class="sci">
+                        <li><img src="images/facebook1.png" alt="" width="30px"></li>
+                        <li><img src="images/instigram.png" alt="" width="30px"></li>
+                        <li><img src="images/twitter.png" alt="" width="30px"></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        // function validationlogin() {
+        //     var email = document.getElementById('email').value;
+        //     var password=document.getElementById('password').value;
+            // alert('vmkdkskdsks');
+            // if( email ="" || password ==""){
+                // swal({
+                //     title: "vds",
+                //     text: "vsd",
+                //     icon: "susvs",
+                //     button: "Awvdsss!",
+                //     });
+        // }
+        // }
+        // $("#submit").click(function(){
+        //     var email = $("#email").val();
+        //     var password = $("#password").val();
+        //     // if(email=='' || password=='') {
+        //                 swal({
+        //                     title: "Good job!",
+        //                     text: "You clicked the button!",
+        //                     icon: "success",
+        //                     });
+        //     // }
+        // })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+#contact-section {
+    padding: 120px 0 60px 0;
+    background-color: #f6f6f6;
+}
+#contact-section p{
+    font-size: 1.2em;
+    padding: 11px;
+    margin: 10px;
+   
+}
+.test{
+    display: block;
+    
+}
+#contact-section i{
+    color: red;
+}
+
+#contact-section h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+#contact-section form {
+    padding: 30px 0;
+    padding: 30px 0;
+    margin: 0 188px 0;
+    width: 456px;
+
+}
+#contact-section i.fa {
+    color: #3a7cf3;
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-right: 28px;
+}
+#contact-section .number{
+   margin-right: 93px;
+}
+label {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+#contact-section .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#contact-section .form-control:focus {
+    border-color: inherit;
+    outline: 0;
+    -webkit-box-shadow: transparent;
+    box-shadow: transparent;
+}
+#contact-section .btn {
+    background: transparent;
+    border: 2px solid #3a6cf4;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #3a6cf4;
+}
+#contact-section .btn:hover, #contact-section .btn:focus {
+    background: #3a6cf4ab;
+    border: 2px solid #3a6cf4ab;
+    color: #fff;
+}
+#contact-section .text-danger {
+    color: #cc3300;
+    text-align: left;
+}
+.btn:active, .btn.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+    outline-offset: none;
+}

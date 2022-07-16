@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup page</title>
+</head>
+
+<link rel="stylesheet"   href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+ <!-- Latest compiled and minified CSS -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- font awesome  -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<body>
+    <!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html" style="font-size:21px;"><i class="fa fa-sun-o"></i>Aila<strong></strong></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index1.html" class="page-scroll">Home</a></li>
+        <li><a href="#services-section" class="page-scroll">Services</a></li>
+        <li><a href="product.html" class="page-scroll">Poroducts</a></li>
+        <li><a href="#about-section" class="page-scroll">About</a></li>
+        <li><a href="#team-section" class="page-scroll">Team</a></li>
+        <li><a href="singup.html" class="page-scroll">Singup</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    
+
+    <!-- Login Form -->
+    <div class="alert alert-primary">
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+    <form>
+        <!-- Icon -->
+   
+    
+     
+      <i class='far fa-user-circle' style='font-size:36px'></i>
+   
+    
+      <input type="email"  onclick="check()" id="login" class="fadeIn second"  placeholder="login">
+      <input type="Password" onclick="errorMessage()" id="password" class="fadeIn third"  placeholder="password">
+       <span id="error"></span>
+      <input type="submit"   class="fadeIn fourth" value="Log In">
+    </form>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+<script>
+function errorMessage() {
+		var error = document.getElementById("error")
+		if (isNaN(document.getElementById("password").value))
+		{
+			
+			// Changing content and color of content
+			error.textContent = "Please enter a valid number"
+			error.style.color = "red"
+		} else {
+			error.textContent = ""
+		}
+	}
+    function check()
+    {
+        
+     let y=document.getElementById("login").value;
+    let target=0;
+    for(lett i=0;i<y.length;i++)
+    {
+        if(y[i]=="@")
+        {
+            target=1;
+            
+        }
+        else{
+            break;
+        }
+    }
+    if(target==0){
+        let h=document.getElementById("alert")
+        h.style.display="block";
+        h.innerHTML="<b> error</b>please enter correct email";
+        
+    }
+    else{
+        
+        let h=document.getElementById("alert");
+        h.style.display="non";
+        
+    }   
+        
+    }
+    </script>
+</body>
+</html>
